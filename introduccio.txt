@@ -1,1 +1,2 @@
-UF4,5+6
+javac *.java -d calculadora --> Para mover todo los .java a una carpeta llamada calculadora
+java -cp calculadora/ calculadora.principal  --> Para ejectucar el programa
