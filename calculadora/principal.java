@@ -3,9 +3,15 @@ package calculadora;
 class principal
 {
     public static void main(String[] args){
-        pantalla.escribir("Hola mundo");
-        String variable = teclado.leer("Escribe");
-        pantalla.escribir(variable);
+        String[] opciones = {
+            "1 - Sumar",
+            "2 - Restar",
+            "3 - Multiplicar",
+            "4 - Dividir",
+            "5 - Eciacion de segundo grado"
+        }
+
+    for (String opcion )
 
     }
 }

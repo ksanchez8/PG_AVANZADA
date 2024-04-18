@@ -1,2 +1,3 @@
 javac *.java -d calculadora --> Para mover todo los .java a una carpeta llamada calculadora
 java -cp calculadora/ calculadora.principal  --> Para ejectucar el programa
+rm *.class --> Para eliminar los .class
