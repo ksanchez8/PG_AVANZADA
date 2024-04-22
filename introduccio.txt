@@ -1,3 +1,25 @@
 javac *.java -d calculadora --> Para mover todo los .java a una carpeta llamada calculadora
 java -cp calculadora/ calculadora.principal  --> Para ejectucar el programa
 rm *.class --> Para eliminar los .class
+
+Notación UML
+
+VISIBILIDAD
++ Publica --> Es accesible a todos
+- Privada --> Solo el dueño puede verlo
+# Protected --> Lo muismo que las privadas. solo pueden acceder las classes que heredan 
+  Ninguna --> No significa que sea publico, solo publico para package
+
+Nombre de classes
+Atributo
+Metodos()
+
+Persona
++ Nombre
+- DNI
+----------
++ caminar()
+- respirar ()
++ saltar ()
+
+
