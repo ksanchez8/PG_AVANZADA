@@ -34,6 +34,11 @@ public class ClasseA {
         this.valorSecundari = 10;
     }
  
+    public ClasseA(int vp, int vs) {
+        this.valorPrimari = vp;
+        this.valorSecundari = vs;
+    }
+
 
 }
 
