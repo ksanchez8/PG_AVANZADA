@@ -39,6 +39,9 @@ public class ClasseA {
         this.valorSecundari = vs;
     }
 
+    public int getPrimari() {
+        return this.valorPrimari;
+    }
 
 }
 
