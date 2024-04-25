@@ -43,5 +43,10 @@ public class ClasseA {
         return this.valorPrimari;
     }
 
+    public int getSecundari() {
+        return this.valorSecundari;
+    }
+
+
 }
 
