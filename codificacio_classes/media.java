@@ -17,3 +17,11 @@ public class Media {
     public String getNom() {
         return nom;
     }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getDurada() {
+        return duradaSegons;
+    }
