@@ -13,3 +13,7 @@ public class Media {
         this.autor = autor;
         this.duradaSegons = duradaSegons;
     }
+
+    public String getNom() {
+        return nom;
+    }
