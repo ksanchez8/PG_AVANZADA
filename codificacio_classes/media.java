@@ -25,3 +25,17 @@ public class Media {
     public int getDurada() {
         return duradaSegons;
     }
+
+    
+    public void setNom(String n) {
+        nom = n;
+    }
+
+    public void setAutor(String a) {
+        autor = a;
+    }
+
+    public void setDurada(int d) {
+        duradaSegons = d;
+    }
+}
