@@ -28,7 +28,12 @@ public class ClasseA {
         this.valorPrimari = 5;
         this.valorSecundari = 10;
     }
-    
+
+    public ClasseA(int vp) {
+        this.valorPrimari = vp;
+        this.valorSecundari = 10;
+    }
+ 
 
 }
 
