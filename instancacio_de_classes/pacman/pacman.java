@@ -69,7 +69,7 @@ public class PacMan {
     }
 
     public void pickupBolaEspecial() {
-        // Recogida de bola especial
+        this.poderTemporal = True;
     }
 
     public void pickupFruita() {
