@@ -60,7 +60,8 @@ public class PacMan {
     }
 
     public void move(int newPosX, int newPosY) {
-        //Moviment de PacMan
+        this.posX = newPosX;
+        this.posY = newPosY;
     }
 
     public void pickupBola(){
@@ -83,4 +84,6 @@ public class PacMan {
         // Detección de colisió con un fantasma
         return false;
     }    
+
+
 }
