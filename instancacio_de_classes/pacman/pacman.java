@@ -137,4 +137,8 @@ public class Fantasma {
         this.posY = posY;
     }
 
+    public void move(int newPosX, int newPosY) {
+        this.posX = newPosX;
+        this.posY = newPosY;
+    }
 }
