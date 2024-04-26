@@ -73,7 +73,7 @@ public class PacMan {
     }
 
     public void pickupFruita() {
-        // Recogida de fruta
+        this.puntuacion += 50;
     }
 
     public void loseLife() {
