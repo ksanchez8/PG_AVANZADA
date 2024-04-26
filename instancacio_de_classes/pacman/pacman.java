@@ -70,4 +70,8 @@ public class PacMan {
     public void pickupBolaEspecial() {
         // Recogida de bola especial
     }
+
+    public void pickupFruita() {
+        // Recogida de fruta
+    }
 }
