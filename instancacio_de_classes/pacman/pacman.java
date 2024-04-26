@@ -58,6 +58,9 @@ public class PacMan {
         this.puntuacion = 0;
         this.poderTemporal = false;
     }
-    
+
+    public void move(int newPosX, int newPosY) {
+        //Moviment de PacMan
+    }
 
 }
