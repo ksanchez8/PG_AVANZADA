@@ -65,7 +65,7 @@ public class PacMan {
     }
 
     public void pickupBola(){
-        //Recogida de bola normal
+        this.puntuacion += 10;
     }
 
     public void pickupBolaEspecial() {
