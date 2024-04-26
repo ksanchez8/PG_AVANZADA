@@ -66,4 +66,8 @@ public class PacMan {
     public void pickupBola(){
         //Recogida de bola normal
     }
+
+    public void pickupBolaEspecial() {
+        // Recogida de bola especial
+    }
 }
