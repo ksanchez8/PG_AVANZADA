@@ -63,4 +63,7 @@ public class PacMan {
         //Moviment de PacMan
     }
 
+    public void pickupBola(){
+        //Recogida de bola normal
+    }
 }
