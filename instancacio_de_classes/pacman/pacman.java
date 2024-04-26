@@ -74,4 +74,8 @@ public class PacMan {
     public void pickupFruita() {
         // Recogida de fruta
     }
+
+    public void loseLife() {
+        // Pérdida de vida
+    }
 }
