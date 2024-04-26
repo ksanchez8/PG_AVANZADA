@@ -43,3 +43,15 @@ El codi ha d'estar ben comentat i seguir convencions de nomenclatura clares.
 Exploreu i experimenteu amb la implementació del joc, afegint-hi característiques addicionals si ho desitgeu.
  * 
  */
+
+public class PacMan {
+    private int posX;
+    private int posY;
+    private int vidas;
+    private int puntuacions;
+    private boolean poderTemporal;
+
+
+
+
+}
