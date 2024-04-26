@@ -51,7 +51,13 @@ public class PacMan {
     private int puntuacions;
     private boolean poderTemporal;
 
-
-
+    public PacMan (int posX, int posY) {
+        this.posX = posX;
+        this.posY = posY;
+        this.vidas = 3;
+        this.puntuacion = 0;
+        this.poderTemporal = false;
+    }
+    
 
 }
