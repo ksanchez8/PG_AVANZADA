@@ -83,7 +83,48 @@ public class PacMan {
     public boolean detectColisionFantasma(Fantasma fantasma) {
         // Detección de colisió con un fantasma
         return false;
-    }    
+    }
 
+    //Getters i Setters per les variables
+
+     public int getPosX() {
+        return posX;
+    }
+
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
+    public int getPosY() {
+        return posY;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
+
+    public int getVidas() {
+        return vidas;
+    }
+
+    public void setVidas(int vidas) {
+        this.vidas = vidas;
+    }
+
+    public int getPuntuacion() {
+        return puntuacion;
+    }
+
+    public void setPuntuacion(int puntuacion) {
+        this.puntuacion = puntuacion;
+    }
+
+    public boolean isPoderTemporal() {
+        return poderTemporal;
+    }
+
+    public void setPoderTemporal(boolean poderTemporal) {
+        this.poderTemporal = poderTemporal;
+    }
 
 }
