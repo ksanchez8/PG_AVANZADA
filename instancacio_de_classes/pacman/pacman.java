@@ -78,4 +78,9 @@ public class PacMan {
     public void loseLife() {
         // Pérdida de vida
     }
+
+    public boolean detectColisionFantasma(Fantasma fantasma) {
+        // Detección de colisió con un fantasma
+        return false;
+    }    
 }
