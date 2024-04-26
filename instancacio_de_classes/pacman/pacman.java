@@ -126,5 +126,15 @@ public class PacMan {
     public void setPoderTemporal(boolean poderTemporal) {
         this.poderTemporal = poderTemporal;
     }
+}
+
+public class Fantasma {
+    private int posX;
+    private int posY;
+
+    public Fantasma(int posX, int posY) {
+        this.posX = posX;
+        this.posY = posY;
+    }
 
 }
