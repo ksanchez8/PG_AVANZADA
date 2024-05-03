@@ -113,6 +113,11 @@ public class Principal {
         System.out.println("Recorregut del primer arbre d'enters fent servir les branques dretes:");
         arbreEnters1.recorrerBranquesDretes();
 
+        System.out.println("Recorregut del segon arbre d'enters fent servir les branques esquerres:");
+        arbreEnters2.recorrerBranquesEsquerres();
+
+        System.gc();
+
 
 
     }
