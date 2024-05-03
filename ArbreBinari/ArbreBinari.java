@@ -55,8 +55,12 @@ class ArbreBinari {
     }
 
      public void inserir(int valor) {
+        if (arrel == null) {
+            arrel = new TreeNode(valor);
+            return;
+        }
 
-        
+
      }
 
 
