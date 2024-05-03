@@ -32,3 +32,8 @@ Pistes:
     Un arbre té un node principal i d'aquí penjen els fills. Com atributs té el node (arrel) i la fondaria total.
  * 
  */
+
+class TreeNode<T> {
+    T valor; 
+    
+}
