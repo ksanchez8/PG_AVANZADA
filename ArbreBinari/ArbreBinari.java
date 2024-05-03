@@ -50,9 +50,8 @@ class ArbreBinari {
     int profunditat;
 
     public ArbreBinari(int profunditat) {
-
-
-        
+        this.profunditat = profunditat;
+        this.arrel = null;
     }
 
 
