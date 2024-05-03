@@ -64,7 +64,7 @@ class ArbreBinari {
 
     private void inserirRecursivament(TreeNode node, int valor) {
         if (node.esquerra == null) { 
-            node.esquerra = new TreeNode(valor)
+            node.esquerra = new TreeNode(valor);
 
         } 
         
