@@ -75,8 +75,10 @@ class ArbreBinari {
         else {
             inserirRecursivament(node.esquerra, valor);
         }
+    }
 
-
+        public void recorrerBranquesDretes() {
+        recorrerBranquesDretesRecursivament(arrel);
     }
 
 
