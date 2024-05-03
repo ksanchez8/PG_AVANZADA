@@ -83,7 +83,8 @@ class ArbreBinari {
 
      private void recorrerBranquesDretesRecursivament(TreeNode node) {
         if (node == null) return;
-        System.out.println(node.valor)
+        System.out.println(node.valor);
+        recorrerBranquesDretesRecursivament(node.dreta);
 
 
      }
