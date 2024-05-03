@@ -72,6 +72,10 @@ class ArbreBinari {
             node.dreta = new TreeNode(valor);
         }
 
+        else {
+            inserirRecursivament(node.esquerra, valor);
+        }
+
 
     }
 
