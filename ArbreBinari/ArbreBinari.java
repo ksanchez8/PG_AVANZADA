@@ -47,6 +47,7 @@ class TreeNode {
 
 class ArbreBinari {
     TreeNode arrel;
+    int profunditat;
 
 
 
