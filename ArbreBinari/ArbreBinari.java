@@ -108,6 +108,8 @@ public class Principal {
         ArbreBinari arbreCaracters1 = new ArbreBinari(3);
         ArbreBinari arbreCaracters2 = new ArbreBinari(3);
 
+        System.gc();
+
 
 
     }
