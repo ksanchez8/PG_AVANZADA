@@ -36,6 +36,7 @@ Pistes:
 class TreeNode {
     int valor;
     TreeNode esquerra;
+    TreeNode dreta;
 
 
 
