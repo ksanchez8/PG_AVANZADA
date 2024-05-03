@@ -43,6 +43,10 @@ class TreeNode {
         this.esquerra = null;
         this.dreta = null;
     }
+}
+
+class ArbreBinari {
+    TreeNode arrel;
 
 
 
