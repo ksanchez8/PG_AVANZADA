@@ -54,14 +54,28 @@ class ArbreBinari {
         this.arrel = null;
     }
 
-     public void inserir(int valor) {
+    public void inserir(int valor) {
         if (arrel == null) {
             arrel = new TreeNode(valor);
             return;
         }
+    inserirRecursivament(arrel, valor);
+    }
+
+    private void inserirRecursivament(TreeNode node, int valor) {
+        if (node.esquerra == null) { 
+            node.esquerra = new TreeNode(valor)
+
+        } 
+        
+        else if (node.dreta == null) {
+            node.dreta = new TreeNode(valor);
+        }
 
 
-     }
+    }
+
+
 
 
 
