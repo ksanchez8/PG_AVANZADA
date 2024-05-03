@@ -33,7 +33,10 @@ Pistes:
  * 
  */
 
-class TreeNode<T> {
-    T valor; 
-    
+class TreeNode {
+    int valor;
+
+
+
+
 }
