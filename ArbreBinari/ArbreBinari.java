@@ -54,6 +54,11 @@ class ArbreBinari {
         this.arrel = null;
     }
 
+     public void inserir(int valor) {
+
+        
+     }
+
 
 
 
