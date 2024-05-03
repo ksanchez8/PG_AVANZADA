@@ -85,9 +85,13 @@ class ArbreBinari {
         if (node == null) return;
         System.out.println(node.valor);
         recorrerBranquesDretesRecursivament(node.dreta);
+    }
+
+    public void recorrerBranquesEsquerres() {   
+        recorrerBranquesEsquerresRecursivament(arrel);
+    }
 
 
-     }
 
 
 
