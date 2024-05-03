@@ -49,6 +49,12 @@ class ArbreBinari {
     TreeNode arrel;
     int profunditat;
 
+    public ArbreBinari(int profunditat) {
+
+
+        
+    }
+
 
 
 
