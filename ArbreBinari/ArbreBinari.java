@@ -98,8 +98,19 @@ class ArbreBinari {
 
     }
 
+}
+
+public class Principal {
+    public static void main(String[] args) {
+        ArbreBinari arbreEnters1 = new ArbreBinari(5);
+        ArbreBinari arbreEnters2 = new ArbreBinari(5);
+
+        ArbreBinari arbreCaracters1 = new ArbreBinari(3);
+        ArbreBinari arbreCaracters2 = new ArbreBinari(3);
 
 
+
+    }
 
 
 
