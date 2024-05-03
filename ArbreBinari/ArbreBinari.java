@@ -110,6 +110,9 @@ public class Principal {
 
         System.gc();
 
+        System.out.println("Recorregut del primer arbre d'enters fent servir les branques dretes:");
+        arbreEnters1.recorrerBranquesDretes();
+
 
 
     }
