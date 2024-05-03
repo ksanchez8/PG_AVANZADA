@@ -94,6 +94,7 @@ class ArbreBinari {
     private void recorrerBranquesEsquerresRecursivament(TreeNode node) {
         if (node == null) return;
         System.out.println(node.valor);
+        recorrerBranquesEsquerresRecursivament(node.esquerra);
 
     }
 
