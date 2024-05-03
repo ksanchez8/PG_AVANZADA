@@ -38,6 +38,12 @@ class TreeNode {
     TreeNode esquerra;
     TreeNode dreta;
 
+    public TreeNode(int valor) {
+        this.valor = valor;
+        this.esquerra = null;
+        this.dreta = null;
+    }
+
 
 
 
