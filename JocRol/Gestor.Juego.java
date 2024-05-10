@@ -17,6 +17,9 @@ public class GestorJuego {
             Document document = builder.parse(new File(rutaArchivo));
             document.getDocumentElement().normalize();
 
+            NodeList nodeList = document.getElementsByTagName("personaje");
+
+
 
 
 }
