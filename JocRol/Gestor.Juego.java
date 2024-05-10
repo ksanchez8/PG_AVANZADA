@@ -43,6 +43,7 @@ public class GestorJuego {
             for (Personaje personaje : personajes) {
             personaje.imprimirInformacion();
             }
+        }
     }
 
 
