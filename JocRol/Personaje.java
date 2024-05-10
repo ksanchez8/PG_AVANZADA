@@ -13,6 +13,14 @@ public class Personaje {
         this.puntosDeMana = puntosDeMana;
     }
 
+    public void imprimirInformacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Nivel: " + nivel);
+        System.out.println("Puntos de Vida: " + puntosDeVida);
+        System.out.println("Puntos de Mana: " + puntosDeMana);
+        System.out.println("---------------------");
+    }
+
     
 
 
