@@ -33,6 +33,10 @@ public class GestorJuego {
         } catch (Exception e) {
             System.err.println("Error al cargar personajes desde XML: " + e.getMessage());
 
+        }
+
+        return personajes;
+
 
 
 }
