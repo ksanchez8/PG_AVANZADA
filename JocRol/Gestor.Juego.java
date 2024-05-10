@@ -37,6 +37,14 @@ public class GestorJuego {
 
         return personajes;
 
+        public static void main(String[] args) {
+            List<Personaje> personajes = cargarPersonajesDesdeXML("");
+
+            for (Personaje personaje : personajes) {
+            personaje.imprimirInformacion();
+            }
+    }
+
 
 
 }
