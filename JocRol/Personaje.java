@@ -6,6 +6,13 @@ public class Personaje {
     private int puntosDeVida;
     private int puntosDeMana;
 
+    public Personaje(String nombre, int nivel, int puntosDeVida, int puntosDeMana) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.puntosDeVida = puntosDeVida;
+        this.puntosDeMana = puntosDeMana;
+    }
+
     
 
 
