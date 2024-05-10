@@ -29,6 +29,9 @@ public class GestorJuego {
                 Personaje personaje = new Personaje(nombre, nivel, puntosDeVida, puntosDeMana);
                 personajes.add(personaje);
 
+            }
+        } catch (Exception e) {
+            System.err.println("Error al cargar personajes desde XML: " + e.getMessage());
 
 
 
