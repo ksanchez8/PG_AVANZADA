@@ -38,7 +38,7 @@ public class GestorJuego {
         return personajes;
 
         public static void main(String[] args) {
-            List<Personaje> personajes = cargarPersonajesDesdeXML("");
+            List<Personaje> personajes = cargarPersonajesDesdeXML("~/Kilian/PF_AVANZADA/JocRol/personatges.xml");
 
             for (Personaje personaje : personajes) {
             personaje.imprimirInformacion();
