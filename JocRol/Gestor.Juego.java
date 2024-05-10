@@ -19,6 +19,9 @@ public class GestorJuego {
 
             NodeList nodeList = document.getElementsByTagName("personaje");
 
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                Element element = (Element) nodeList.item(i);
+
 
 
 
