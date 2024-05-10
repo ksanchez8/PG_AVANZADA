@@ -26,6 +26,9 @@ public class GestorJuego {
                 int puntosDeVida = Integer.parseInt(element.getElementsByTagName("puntosDeVida").item(0).getTextContent());
                 int puntosDeMana = Integer.parseInt(element.getElementsByTagName("puntosDeMana").item(0).getTextContent());
 
+                Personaje personaje = new Personaje(nombre, nivel, puntosDeVida, puntosDeMana);
+                personajes.add(personaje);
+
 
 
 
