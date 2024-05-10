@@ -34,7 +34,7 @@ public class GestorJuego {
             System.err.println("Error al cargar personajes desde XML: " + e.getMessage());
 
         }
-
+    }
         return personajes;
 
         public static void main(String[] args) {
@@ -44,7 +44,7 @@ public class GestorJuego {
             personaje.imprimirInformacion();
             }
         }
-    }
+    
 
 
 
