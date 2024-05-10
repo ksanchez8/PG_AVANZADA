@@ -21,6 +21,10 @@ public class GestorJuego {
 
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element element = (Element) nodeList.item(i);
+                String nombre = element.getElementsByTagName("nombre").item(0).getTextContent();
+                int nivel = Integer.parseInt(element.getElementsByTagName("nivel").item(0).getTextContent());
+                int puntosDeVida = Integer.parseInt(element.getElementsByTagName("puntosDeVida").item(0).getTextContent());
+                int puntosDeMana = Integer.parseInt(element.getElementsByTagName("puntosDeMana").item(0).getTextContent());
 
 
 
