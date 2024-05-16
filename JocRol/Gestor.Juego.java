@@ -30,20 +30,22 @@ public class GestorJuego {
                 personajes.add(personaje);
 
             }
-        } catch (Exception e) {
+        } 
+        
+        catch (Exception e) {
             System.err.println("Error al cargar personajes desde XML: " + e.getMessage());
 
         }
     }
-        return personajes;
+    return personajes;
 
-        public static void main(String[] args) {
-            List<Personaje> personajes = cargarPersonajesDesdeXML("~/Kilian/PF_AVANZADA/JocRol/personatges.xml");
+    public static void main(String[] args) {
+        List<Personaje> personajes = cargarPersonajesDesdeXML("~/Kilian/PF_AVANZADA/JocRol/personatges.xml");
 
-            for (Personaje personaje : personajes) {
-            personaje.imprimirInformacion();
-            }
+        for (Personaje personaje : personajes) {
+        personaje.imprimirInformacion();
         }
+    }
     
 
 
