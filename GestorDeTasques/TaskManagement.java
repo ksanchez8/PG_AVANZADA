@@ -82,6 +82,7 @@ class TaskManagement {
         }
     }
 
+    //Se añade metodo para eliminar tarea
     public void deleteTask(int taskId) {
         Task task = tasks.remove(taskId);
         if (task != null) {
