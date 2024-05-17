@@ -83,5 +83,13 @@ class TaskManagement {
         });
     }
 
+    public void printTasksByStatus(String status) {
+        System.out.println("Tareas con estado: " + status);
+        for (Task task : lists.get(status)) {
+            System.out.println(task);
+        }
+    }
+}
+
 
 
