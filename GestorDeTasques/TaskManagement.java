@@ -213,6 +213,11 @@ class Main {
                     String newStatus = scanner.nextLine();
                     manager.modifyTask(taskIdModify, newName, newDescription, newDeadline, newStatus);
                     break;
+                case 3:
+                    System.out.println("Ingrese el ID de la tarea que desea eliminar:");
+                    int taskIdDelete = scanner.nextInt();
+                    manager.deleteTask(taskIdDelete);
+                    break;
 
                 
 
