@@ -170,6 +170,21 @@ class Task {
 
 class Main {
     public static void main(String[] args) {
+        String filename = "tasks.txt"; // Nombre del archivo para guardar las tareas
+        TaskManagement manager = new TaskManagement(filename);
+        Scanner scanner = new Scanner(System.in);
+        boolean exit = false;
+
+        while (!exit) {
+            System.out.println("Seleccione una opción:");
+            System.out.println("1. Añadir tarea");
+            System.out.println("2. Modificar tarea");
+            System.out.println("3. Eliminar tarea");
+            System.out.println("4. Imprimir todas las tareas");
+            System.out.println("5. Imprimir tareas por estado");
+            System.out.println("6. Salir");
+            System.out.print("Opción: ");
+            int option = scanner.nextInt();
 
     }
 }
