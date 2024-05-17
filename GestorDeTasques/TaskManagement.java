@@ -77,4 +77,11 @@ class TaskManagement {
         }
     }
 
+    public void printAllTasks() {
+        tasks.forEach((key, task) -> {
+            System.out.println(task);
+        });
+    }
+
+
 
