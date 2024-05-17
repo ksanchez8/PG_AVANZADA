@@ -218,6 +218,9 @@ class Main {
                     int taskIdDelete = scanner.nextInt();
                     manager.deleteTask(taskIdDelete);
                     break;
+                case 4:
+                    manager.printAllTasks();
+                    break;
 
                 
 
