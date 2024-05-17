@@ -52,3 +52,18 @@ class TaskManagement {
         tasks.put(task.getId(), task);
         saveTasksToFile(); 
     }
+
+    public void modifyTask(int taskId, String newName, String newDescription, String newDeadline, String newStatus) {
+        Task task = tasks.get(taskId);
+        if (task != null) {
+        
+            task.setName(newName);
+            task.setDescription(newDescription);
+            task.setDeadline(newDeadline);
+            task.setStatus(newStatus);
+            saveTasksToFile(); 
+        } else {
+            System.out.println("Tarea no encontrada.");
+        }
+    }
+
