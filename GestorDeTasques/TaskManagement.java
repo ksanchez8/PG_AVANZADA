@@ -66,6 +66,8 @@ class TaskManagement {
         tasks.put(task.getId(), task);
         saveTasksToFile();
     }
+
+    //Se añade método para modificar tarea
     public void modifyTask(int taskId, String newName, String newDescription, String newDeadline, String newStatus) {
         Task task = tasks.get(taskId);
         if (task != null) {
