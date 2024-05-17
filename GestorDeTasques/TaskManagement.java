@@ -91,5 +91,66 @@ class TaskManagement {
     }
 }
 
+class Task {
+    private static int numInstances = 0;
+    private int id;
+    private String name;
+    private String description;
+    private String deadline;
+    private String status;
+
+    public Task(String name, String description, String deadline, String status) {
+        this.id = ++numInstances;
+        this.name = name;
+        this.description = description;
+        this.deadline = deadline;
+        this.status = status;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getDeadline() {
+        return deadline;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setDeadline(String deadline) {
+        this.deadline = deadline;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String toFileString() {
+        return name + "," + description + "," + deadline + "," + status;
+    }
+
+    public String toString() {
+        return "Id: " + id + ", Name: " + name + ", Description: " + description + ", Deadline: " + deadline + ", Status: " + status;
+    }
+}
+
 
 
