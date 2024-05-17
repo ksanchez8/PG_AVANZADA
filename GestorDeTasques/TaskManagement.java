@@ -67,3 +67,14 @@ class TaskManagement {
         }
     }
 
+    public void deleteTask(int taskId) {
+        Task task = tasks.remove(taskId);
+        if (task != null) {
+            lists.get(task.getStatus()).remove(task);
+            saveTasksToFile(); 
+        } else {
+            System.out.println("Tarea no encontrada.");
+        }
+    }
+
+
