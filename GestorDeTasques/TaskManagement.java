@@ -43,5 +43,7 @@ class TaskManagement {
             for (Task task : tasks.values()) {
                 writer.write(task.toFileString() + "\n");
             }
-        } 
+        } catch (IOException e) {
+            System.out.println("Error al guardar las tareas en el archivo.");
+        }
     }
