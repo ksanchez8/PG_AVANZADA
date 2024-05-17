@@ -37,3 +37,11 @@ class TaskManagement {
             System.out.println("Error al cargar las tareas desde el archivo.");
         }
     }
+
+    private void saveTasksToFile() {
+        try (FileWriter writer = new FileWriter(filename)) {
+            for (Task task : tasks.values()) {
+                writer.write(task.toFileString() + "\n");
+            }
+        } 
+    }
