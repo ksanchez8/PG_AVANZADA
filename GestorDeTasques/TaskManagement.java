@@ -199,7 +199,7 @@ class Main {
                     String status = scanner.nextLine();
                     manager.addTask(name, description, deadline, status);
                     break;
-                    case 2:
+                case 2:
                     System.out.println("Ingrese el ID de la tarea que desea modificar:");
                     int taskIdModify = scanner.nextInt();
                     System.out.println("Ingrese el nuevo nombre de la tarea:");
@@ -213,6 +213,7 @@ class Main {
                     String newStatus = scanner.nextLine();
                     manager.modifyTask(taskIdModify, newName, newDescription, newDeadline, newStatus);
                     break;
+
                 
 
     }
