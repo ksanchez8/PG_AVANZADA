@@ -227,9 +227,14 @@ class Main {
                     String taskStatus = scanner.nextLine();
                     manager.printTasksByStatus(taskStatus);
                     break;
+                    case 6:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
+            }
+        }
 
-                
-
+        scanner.close();
     }
 }
-
