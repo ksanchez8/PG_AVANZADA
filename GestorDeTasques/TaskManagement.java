@@ -89,8 +89,14 @@ class TaskManagement {
 
     public void printTasksByStatus(String status) {
         System.out.println("Tareas con estado: " + status);
-        for (Task task : lists.get(status)) {
-            System.out.println(task);
+        // Verifica si la lista correspondiente al estado existe en el HashMap
+        if (lists.containsKey(status)) {
+            // Si la lista existe, itera sobre ella e imprime cada tarea
+            for (Task task : lists.get(status)) {
+                System.out.println(task);
+            }
+        } else {
+            System.out.println("No hay tareas con el estado: " + status);
         }
     }
 }
