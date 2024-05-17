@@ -33,5 +33,7 @@ class TaskManagement {
                 tasks.put(task.getId(), task);
                 lists.get(status).add(task);
             }
-        } 
+        } catch (IOException e) {
+            System.out.println("Error al cargar las tareas desde el archivo.");
+        }
     }
