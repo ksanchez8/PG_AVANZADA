@@ -222,11 +222,11 @@ class Main {
                     manager.printAllTasks();
                     break;
                 case 5:
-                System.out.println("Ingrese el estado de las tareas que desea imprimir:");
-                scanner.nextLine();
-                String taskStatus = scanner.nextLine();
-                manager.printTasksByStatus(taskStatus);
-                break;
+                    System.out.println("Ingrese el estado de las tareas que desea imprimir:");
+                    scanner.nextLine();
+                    String taskStatus = scanner.nextLine();
+                    manager.printTasksByStatus(taskStatus);
+                    break;
 
                 
 
