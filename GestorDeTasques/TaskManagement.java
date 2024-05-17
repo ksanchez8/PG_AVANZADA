@@ -186,6 +186,21 @@ class Main {
             System.out.print("Opción: ");
             int option = scanner.nextInt();
 
+            switch (option) {
+                case 1:
+                    System.out.println("Ingrese el nombre de la tarea:");
+                    scanner.nextLine(); // Consumir la nueva línea
+                    String name = scanner.nextLine();
+                    System.out.println("Ingrese la descripción de la tarea:");
+                    String description = scanner.nextLine();
+                    System.out.println("Ingrese la fecha límite de la tarea (YYYY-MM-DD):");
+                    String deadline = scanner.nextLine();
+                    System.out.println("Ingrese el estado de la tarea (Pendiente, En curso, Completada):");
+                    String status = scanner.nextLine();
+                    manager.addTask(name, description, deadline, status);
+                    break;
+                
+
     }
 }
 
