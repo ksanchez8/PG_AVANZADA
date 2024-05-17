@@ -48,11 +48,15 @@ class TaskManagement {
 
     public void addTask(String name, String description, String deadline, String status) {
         Task task = new Task(name, description, deadline, status);
+        // Verifica si la lista correspondiente al estado de la tarea ya existe
+        if (!lists.containsKey(status)) {
+            lists.put(status, new ArrayList<>()); // Si no existe, inicialízala
+        }
+        // Agrega la tarea a la lista
         lists.get(status).add(task);
         tasks.put(task.getId(), task);
-        saveTasksToFile(); 
+        saveTasksToFile();
     }
-
     public void modifyTask(int taskId, String newName, String newDescription, String newDeadline, String newStatus) {
         Task task = tasks.get(taskId);
         if (task != null) {
