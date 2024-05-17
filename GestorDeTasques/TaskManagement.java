@@ -18,3 +18,20 @@ class TaskManagement {
         tasks = new HashMap<>();
         loadTasksFromFile(); // Cargamos las tareas del archivo al iniciar el programa
     }
+
+    
+    private void loadTasksFromFile() {
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                String name = parts[0];
+                String description = parts[1];
+                String deadline = parts[2];
+                String status = parts[3];
+                Task task = new Task(name, description, deadline, status);
+                tasks.put(task.getId(), task);
+                lists.get(status).add(task);
+            }
+        } 
+    }
