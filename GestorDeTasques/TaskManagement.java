@@ -189,7 +189,7 @@ class Main {
             switch (option) {
                 case 1:
                     System.out.println("Ingrese el nombre de la tarea:");
-                    scanner.nextLine(); // Consumir la nueva línea
+                    scanner.nextLine();
                     String name = scanner.nextLine();
                     System.out.println("Ingrese la descripción de la tarea:");
                     String description = scanner.nextLine();
@@ -198,6 +198,20 @@ class Main {
                     System.out.println("Ingrese el estado de la tarea (Pendiente, En curso, Completada):");
                     String status = scanner.nextLine();
                     manager.addTask(name, description, deadline, status);
+                    break;
+                    case 2:
+                    System.out.println("Ingrese el ID de la tarea que desea modificar:");
+                    int taskIdModify = scanner.nextInt();
+                    System.out.println("Ingrese el nuevo nombre de la tarea:");
+                    scanner.nextLine(); 
+                    String newName = scanner.nextLine();
+                    System.out.println("Ingrese la nueva descripción de la tarea:");
+                    String newDescription = scanner.nextLine();
+                    System.out.println("Ingrese la nueva fecha límite de la tarea (YYYY-MM-DD):");
+                    String newDeadline = scanner.nextLine();
+                    System.out.println("Ingrese el nuevo estado de la tarea (Pendiente, En curso, Completada):");
+                    String newStatus = scanner.nextLine();
+                    manager.modifyTask(taskIdModify, newName, newDescription, newDeadline, newStatus);
                     break;
                 
 
