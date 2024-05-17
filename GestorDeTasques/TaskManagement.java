@@ -54,6 +54,7 @@ class TaskManagement {
         }
     }
 
+    //Método para añadir tarea
     public void addTask(String name, String description, String deadline, String status) {
         Task task = new Task(name, description, deadline, status);
         // Verifica si la lista correspondiente al estado de la tarea ya existe
