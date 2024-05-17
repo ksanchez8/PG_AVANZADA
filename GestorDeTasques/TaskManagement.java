@@ -152,5 +152,22 @@ class Task {
     }
 }
 
-
+class Main {
+    public static void main(String[] args) {
+        String filename = "tasks.txt"; // Nombre del archivo para guardar las tareas
+        TaskManagement manager = new TaskManagement(filename);
+        System.out.println("Añadir tarea");
+        manager.addTask("Hacer ejercicio", "Realizar una rutina de ejercicios", "2024-05-20", "Pendiente");
+        System.out.println("Imprimir todas las tareas");
+        manager.printAllTasks();
+        System.out.println("Modificar tarea");
+        manager.modifyTask(1, "Hacer ejercicio", "Realizar una rutina de ejercicios por 30 minutos", "2024-05-20", "En curso");
+        System.out.println("Imprimir tareas por estado");
+        manager.printTasksByStatus("En curso");
+        System.out.println("Eliminar tarea");
+        manager.deleteTask(1);
+        System.out.println("Imprimir todas las tareas");
+        manager.printAllTasks();
+    }
+}
 
