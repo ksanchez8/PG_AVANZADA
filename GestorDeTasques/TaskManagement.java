@@ -29,12 +29,18 @@ class TaskManagement {
                 String status = parts[3];
                 Task task = new Task(name, description, deadline, status);
                 tasks.put(task.getId(), task);
+                // Verifica si la lista correspondiente al estado de la tarea ya existe en el HashMap
+                if (!lists.containsKey(status)) {
+                    lists.put(status, new ArrayList<>()); // Si no existe, inicialízala
+                }
+                // Agrega la tarea a la lista correspondiente al estado
                 lists.get(status).add(task);
             }
         } catch (IOException e) {
             System.out.println("Error al cargar las tareas desde el archivo.");
         }
     }
+    
 
     private void saveTasksToFile() {
         try (FileWriter writer = new FileWriter(filename)) {
