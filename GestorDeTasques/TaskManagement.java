@@ -1,5 +1,3 @@
-package taskmanegement;
-
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.io.FileWriter;
@@ -46,4 +44,11 @@ class TaskManagement {
         } catch (IOException e) {
             System.out.println("Error al guardar las tareas en el archivo.");
         }
+    }
+
+    public void addTask(String name, String description, String deadline, String status) {
+        Task task = new Task(name, description, deadline, status);
+        lists.get(status).add(task);
+        tasks.put(task.getId(), task);
+        saveTasksToFile(); 
     }
