@@ -17,6 +17,8 @@ public class RobotApp {
        JButton saveStateButton = new JButton("Guardar Estat");
        JButton loadStateButton = new JButton("Carregar Estat");
 
+       JTextArea consoleOutput = new JTextArea(10, 20);
+
 
 
 
