@@ -37,6 +37,10 @@ public class RobotApp {
         frame.add(consoleOutput, BorderLayout.CENTER);
         frame.add(controlPanel, BorderLayout.SOUTH);
 
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+
 
 
 
