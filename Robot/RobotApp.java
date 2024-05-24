@@ -41,6 +41,13 @@ public class RobotApp {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
+        moveForwardButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                consoleOutput.append("Mover hacia adelante\n");
+                // Codigo a introducir en un futuro
+            }
+        });
+
 
 
 
