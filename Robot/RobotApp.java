@@ -81,9 +81,9 @@ public class RobotApp {
         
         loadStateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                consoleOutput.append("Cargar estado\n");
-                // Codigo a introducir en un futuro
-            }
+                String estado = cargarEstadoDesdeArchivo("estado.txt");
+                consoleOutput.setText(estado);
+                consoleOutput.append("Estado cargado desde estado.txt\n");
         });
     }
 
@@ -94,10 +94,6 @@ public class RobotApp {
            e.printStackTrace();
        }
     }
-
-
-
-
 
 
 }
