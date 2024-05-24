@@ -19,6 +19,8 @@ public class RobotApp {
 
        JTextArea consoleOutput = new JTextArea(10, 20);
 
+       consoleOutput.setEditable(false);
+
 
 
 
