@@ -8,6 +8,8 @@ public class RobotApp {
 
         JFrame frame = new JFrame("Control de Robot");
 
+        JPanel controlPanel = new JPanel();
+
 
 
 
