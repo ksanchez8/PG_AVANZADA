@@ -2,9 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -83,9 +81,9 @@ public class RobotApp {
         
         loadStateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String estado = cargarEstadoDesdeArchivo("estado.txt");
-                consoleOutput.setText(estado);
-                consoleOutput.append("Estado cargado desde estado.txt\n");
+                consoleOutput.append("Cargar estado\n");
+                // Codigo a introducir en un futuro
+            }
         });
     }
 
@@ -95,19 +93,6 @@ public class RobotApp {
        } catch (IOException e) {
            e.printStackTrace();
        }
-    }
-
-   private static String cargarEstadoDesdeArchivo(String nombreArchivo) {
-        StringBuilder estado = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(nombreArchivo))) {
-            String linea;
-            while ((linea = reader.readLine()) != null) {
-                estado.append(linea).append("\n");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return estado.toString();
     }
 
 
