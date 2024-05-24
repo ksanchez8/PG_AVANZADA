@@ -32,6 +32,8 @@ public class RobotApp {
         controlPanel.add(saveStateButton);
         controlPanel.add(loadStateButton);
 
+        frame.setLayout(new BorderLayout());
+
 
 
 
