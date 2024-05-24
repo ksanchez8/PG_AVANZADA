@@ -75,6 +75,14 @@ public class RobotApp {
                 // Codigo a introducir en un futuro
             }
         });
+        
+        loadStateButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                consoleOutput.append("Cargar estado\n");
+                // Codigo a introducir en un futuro
+            }
+        });
+    }
 
 
 
