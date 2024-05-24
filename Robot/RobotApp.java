@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class RobotApp {
     public static void main(String[] args) {
@@ -82,6 +85,14 @@ public class RobotApp {
                 // Codigo a introducir en un futuro
             }
         });
+    }
+
+    private static void guardarEstadoEnArchivo(String nombreArchivo, String contenido) {
+       try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo))) {
+           writer.write(contenido);
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
     }
 
 
