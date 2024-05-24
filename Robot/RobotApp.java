@@ -21,6 +21,8 @@ public class RobotApp {
 
        consoleOutput.setEditable(false);
 
+       controlPanel.setLayout(new GridLayout(3, 2));
+
 
 
 
