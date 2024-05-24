@@ -55,6 +55,13 @@ public class RobotApp {
             }
         });
 
+        rotateLeftButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                consoleOutput.append("Girar a la izquierda\n");
+                // Codigo a introducir en un futuro
+            }
+        });
+
 
 
 
