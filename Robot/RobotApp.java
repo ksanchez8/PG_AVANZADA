@@ -34,6 +34,9 @@ public class RobotApp {
 
         frame.setLayout(new BorderLayout());
 
+        frame.add(consoleOutput, BorderLayout.CENTER);
+        frame.add(controlPanel, BorderLayout.SOUTH);
+
 
 
 
