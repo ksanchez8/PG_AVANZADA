@@ -25,6 +25,13 @@ public class RobotApp {
 
         controlPanel.setLayout(new GridLayout(3, 2));
 
+        controlPanel.add(moveForwardButton);
+        controlPanel.add(moveBackwardButton);
+        controlPanel.add(rotateLeftButton);
+        controlPanel.add(rotateRightButton);
+        controlPanel.add(saveStateButton);
+        controlPanel.add(loadStateButton);
+
 
 
 
