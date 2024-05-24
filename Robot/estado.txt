@@ -1,4 +1,3 @@
-Mover hacia adelante
 Mover hacia atrás
-Girar a la izquierda
 Girar a la derecha
+Girar a la izquierda
