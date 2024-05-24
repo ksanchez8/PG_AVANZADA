@@ -48,6 +48,13 @@ public class RobotApp {
             }
         });
 
+        moveBackwardButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                consoleOutput.append("Mover hacia atrás\n");
+                // Codigo a introducir en un futuro
+            }
+        });
+
 
 
 
