@@ -10,6 +10,13 @@ public class RobotApp {
 
         JPanel controlPanel = new JPanel();
 
+       JButton moveForwardButton = new JButton("Moure Endavant");
+       JButton moveBackwardButton = new JButton("Moure Enrere");
+       JButton rotateLeftButton = new JButton("Girar Esquerra");
+       JButton rotateRightButton = new JButton("Girar Dreta");
+       JButton saveStateButton = new JButton("Guardar Estat");
+       JButton loadStateButton = new JButton("Carregar Estat");
+
 
 
 
