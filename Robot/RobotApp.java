@@ -71,8 +71,8 @@ public class RobotApp {
 
         saveStateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                consoleOutput.append("Guardar estado\n");
-                // Codigo a introducir en un futuro
+                guardarEstadoEnArchivo("estado.txt", consoleOutput.getText());
+                consoleOutput.append("Estado guardado en estado.txt\n");
             }
         });
         
