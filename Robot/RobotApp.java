@@ -2,7 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -94,6 +96,20 @@ public class RobotApp {
            e.printStackTrace();
        }
     }
+
+   private static String cargarEstadoDesdeArchivo(String nombreArchivo) {
+        StringBuilder estado = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea;
+            while ((linea = reader.readLine()) != null) {
+                estado.append(linea).append("\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return estado.toString();
+    }
+
 
 
 }
