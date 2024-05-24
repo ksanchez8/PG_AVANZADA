@@ -65,7 +65,14 @@ public class RobotApp {
         rotateRightButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 consoleOutput.append("Girar a la derecha\n");
-                // Lógica para girar el robot a la derecha
+                // Codigo a introducir en un futuro
+            }
+        });
+
+        saveStateButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                consoleOutput.append("Guardar estado\n");
+                // Codigo a introducir en un futuro
             }
         });
 
