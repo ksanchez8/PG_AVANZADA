@@ -26,6 +26,10 @@ public class SalutacioAppBasica extends Application {
         primaryStage.setTitle("Aplicació de Salutació");
         primaryStage.setScene(scene);
         primaryStage.show();
-
+    }
+    
+    public static void main(String[] args) {  
+        launch(args);  
+    }
     
 }
