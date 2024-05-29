@@ -18,4 +18,5 @@ public class SalutacioAppBasica extends Application {
     });
 
     StackPane root = new StackPane();
+    root.getChildren().add(button);
 }
