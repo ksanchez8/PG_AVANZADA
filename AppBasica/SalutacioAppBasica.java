@@ -20,4 +20,6 @@ public class SalutacioAppBasica extends Application {
     StackPane root = new StackPane();
     root.getChildren().add(button);
     Scene scene = new Scene(root, 300, 200);
+
+    primaryStage.setTitle("Aplicació de Salutació");
 }
