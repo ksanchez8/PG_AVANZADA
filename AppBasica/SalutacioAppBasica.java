@@ -8,4 +8,12 @@ import javafx.stage.Stage;
 public class SalutacioAppBasica extends Application {
     Button button = new Button("Clica aquí");
 
+    button.setOnAction(event -> {
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Salutació");  // Establece el título de la alerta
+        alert.setHeaderText(null);    // No establece encabezado para la alerta
+        alert.setContentText("Hola! Gràcies per clicar el botó.");  // Establece el texto del mensaje
+        alert.showAndWait();  // Muestra la alerta y espera hasta que el usuario la cierre
+    });
 }
