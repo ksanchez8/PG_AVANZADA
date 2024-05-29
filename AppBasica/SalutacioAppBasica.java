@@ -16,4 +16,6 @@ public class SalutacioAppBasica extends Application {
         alert.setContentText("Hola! Gràcies per clicar el botó.");  // Establece el texto del mensaje
         alert.showAndWait();  // Muestra la alerta y espera hasta que el usuario la cierre
     });
+
+    StackPane root = new StackPane();
 }
