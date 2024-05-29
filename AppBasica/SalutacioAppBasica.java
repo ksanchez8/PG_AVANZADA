@@ -6,5 +6,6 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage; 
 
 public class SalutacioAppBasica extends Application {
+    Button button = new Button("Clica aquí");
 
 }
