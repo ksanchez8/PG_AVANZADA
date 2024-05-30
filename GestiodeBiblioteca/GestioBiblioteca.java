@@ -1,5 +1,9 @@
 package GestiodeBiblioteca;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class GestioBiblioteca {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/biblioteca";
     private static final String USER = "root";
@@ -13,3 +17,13 @@ public class GestioBiblioteca {
             inserirAutor(conn, "Isaac", "Asimov");
             inserirLlibre(conn, "Foundation", 1951, 4);
 
+       obtenirLlibresAutor(conn, 4);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }     
+
+    public static void inserirAutor(Connection conn, String nom, String cognom) {
+        String sql = "INSERT INTO Autor (nom, cognom) VALUES (?, ?)";
+}
