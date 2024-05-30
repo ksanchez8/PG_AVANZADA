@@ -9,3 +9,8 @@ public class FileRenamer {
         String filePath = scanner.nextLine();
 
         File file = new File(filePath);
+
+        if (!file.exists()) {
+            System.out.println("El fitxer especificat no existeix.");
+            return;
+        }
