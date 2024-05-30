@@ -18,3 +18,6 @@ public class Principal {
         double preuTotal = botiga.calcularPreuTotal();
         System.out.println("Preu Total de la Botiga: " + preuTotal);
 
+        botiga.mostrarDetallsProductes();
+    }
+}
