@@ -28,3 +28,7 @@ public class FileRenamer {
         } else {
             System.out.println("No s'ha pogut reanomenar el fitxer.");
         }
+
+        scanner.close();
+    }
+}
