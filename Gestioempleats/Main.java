@@ -1,4 +1,4 @@
-import Gestioempleats.GestionEmpleados;
+package Gestioempleats;
 
 import java.util.List;
 import java.util.Scanner;
