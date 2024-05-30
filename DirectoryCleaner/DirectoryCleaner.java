@@ -21,3 +21,12 @@ public class DirectoryCleaner {
             System.out.println("No s'ha pogut eliminar el contingut de la carpeta.");
         }
 
+        scanner.close();
+    }
+
+    public static boolean deleteDirectoryContents(File directory) {
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isDirectory()) {
+
