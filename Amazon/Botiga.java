@@ -22,4 +22,10 @@ class Botiga {
         return total;
     }
 
+    public void mostrarDetallsProductes() {
+        for (Producte producte : productes) {
+            System.out.println(producte);
+        }
+    }
+
 }
