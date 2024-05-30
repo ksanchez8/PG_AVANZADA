@@ -8,5 +8,13 @@ class Electrodomestic extends Producte {
         this.mesosGarantia = mesosGarantia;
     }
 
+    @Override
+    public double calcularPreuFinal() {
+        if (mesosGarantia > 24) {
+            return preu * 1.2; // 20% de recàrrec si la garantia és més de 24 mesos
+        }
+        return preu;
+    }
+
 
 }
