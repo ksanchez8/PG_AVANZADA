@@ -9,3 +9,8 @@ public class DirectoryCleaner {
         String directoryPath = scanner.nextLine();
 
         File directory = new File(directoryPath);
+
+        if (!directory.exists() || !directory.isDirectory()) {
+            System.out.println("La ruta especificada no és una carpeta vàlida.");
+            return;
+        }
