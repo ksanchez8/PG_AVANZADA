@@ -59,4 +59,14 @@ public class GestioBiblioteca {
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setInt(1, autorId);
             ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String titol = rs.getString("titol");
+                int anyPublicacio = rs.getInt("anyPublicacio");
+                System.out.println("ID: " + id + ", Títol: " + titol + ", Any de Publicació: " + anyPublicacio);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
