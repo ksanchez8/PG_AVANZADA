@@ -13,3 +13,9 @@ public class GestorNotes {
     public void registrarNotes(String nomAlumne, double[] notes) {
         registreNotes.put(nomAlumne, notes);
     }
+
+    public double[] obtenirNotes(String nomAlumne) {
+        return registreNotes.get(nomAlumne);
+    }
+
+}
