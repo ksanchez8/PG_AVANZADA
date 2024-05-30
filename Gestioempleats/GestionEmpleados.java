@@ -26,4 +26,17 @@ public class GestionEmpleados {
         }
         return empleats;
     }
+    public List<String> llistarEmpleats() {
+        List<String> empleats = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("empleats.txt"))) {
+            String linia;
+            while ((linia = br.readLine()) != null) {
+                empleats.add(linia);
+            }
+        } catch (IOException e) {
+            System.out.println("Error llistant empleats: " + e.getMessage());
+        }
+        return empleats;
+    }
+}
 
