@@ -24,7 +24,7 @@ public class Bicycle {
         return speed;
     }
 
-    public int getCurrentSpeed() {
-        return speed;
+    public String getType() {
+        return type;
     }
 }
