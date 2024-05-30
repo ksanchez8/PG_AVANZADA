@@ -27,5 +27,18 @@ public class Main {
                     int edat = scanner.nextInt();
                     gestio.afegirEmpleat(nom, cognom, edat);
                     break;
+                    
+                case 2:
+                    System.out.println("Introdueix el nom:");
+                    String buscarNom = scanner.nextLine();
+                    List<String> empleats = gestio.buscarEmpleat(buscarNom);
+                    if (empleats.isEmpty()) {
+                        System.out.println("No s'ha trobat cap empleat amb aquest nom.");
+                    } else {
+                        for (String empleat : empleats) {
+                            System.out.println(empleat);
+                        }
+                    }
+                    break;
     
 }
