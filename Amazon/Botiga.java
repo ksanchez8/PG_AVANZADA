@@ -14,4 +14,12 @@ class Botiga {
         productes.add(producte);
     }
 
+    public double calcularPreuTotal() {
+        double total = 0.0;
+        for (Producte producte : productes) {
+            total += producte.calcularPreuFinal();
+        }
+        return total;
+    }
+
 }
