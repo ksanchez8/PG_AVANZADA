@@ -11,4 +11,5 @@ public class GestioBiblioteca {
             System.out.println("Connexió a la base de dades establerta.");
 
             inserirAutor(conn, "Isaac", "Asimov");
+            inserirLlibre(conn, "Foundation", 1951, 4);
 
