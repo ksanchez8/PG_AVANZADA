@@ -4,3 +4,6 @@ import java.util.Scanner;
 public class FileRenamer {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Introdueix la ruta del fitxer:");
+        String filePath = scanner.nextLine();
