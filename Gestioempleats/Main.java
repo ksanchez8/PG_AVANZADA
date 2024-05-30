@@ -16,5 +16,16 @@ public class Main {
             System.out.println("4. Sortir");
             int opcio = scanner.nextInt();
             scanner.nextLine();
+
+            switch (opcio) {
+                case 1:
+                    System.out.println("Introdueix el nom:");
+                    String nom = scanner.nextLine();
+                    System.out.println("Introdueix el cognom:");
+                    String cognom = scanner.nextLine();
+                    System.out.println("Introdueix l'edat:");
+                    int edat = scanner.nextInt();
+                    gestio.afegirEmpleat(nom, cognom, edat);
+                    break;
     
 }
