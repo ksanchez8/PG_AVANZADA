@@ -19,4 +19,9 @@ public class Automobile {
             speed = 0; 
         }
     }
+
+    public int getCurrentSpeed() {
+        return speed;
+    }
+
 }
