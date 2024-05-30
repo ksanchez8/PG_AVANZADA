@@ -7,3 +7,5 @@ public class DirectoryCleaner {
 
         System.out.println("Introdueix la ruta de la carpeta:");
         String directoryPath = scanner.nextLine();
+
+        File directory = new File(directoryPath);
