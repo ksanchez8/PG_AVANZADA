@@ -10,5 +10,13 @@ class Llibre extends Producte {
         this.numPagines = numPagines;
     }
 
+    @Override
+    public double calcularPreuFinal() {
+        if (numPagines > 500) {
+            return preu * 1.1; // 10% de recàrrec si té més de 500 pàgines
+        }
+        return preu;
+    }
+
 
 }
