@@ -16,4 +16,9 @@ public class Main {
         car.brake(); // Frena el automóvil
         System.out.println("Automobile (" + car.getModel() + ") current speed: " + car.getCurrentSpeed() + " km/h");
 
+        bike.accelerate(); // Acelera la bicicleta
+        bike.accelerate(); // Acelera la bicicleta nuevamente
+        bike.brake(); // Frena la bicicleta
+        System.out.println("Bicycle (" + bike.getType() + ") current speed: " + bike.getCurrentSpeed() + " km/h");
+    }
 }
