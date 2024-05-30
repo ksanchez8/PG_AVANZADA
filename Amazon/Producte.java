@@ -6,6 +6,13 @@ abstract class Producte {
     protected double preu;
 
 
+    public Producte(int codi, String nom, double preu) {
+        this.codi = codi;
+        this.nom = nom;
+        this.preu = preu;
+    }
+
+
 
 
 }
