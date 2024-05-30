@@ -15,6 +15,14 @@ public class Principal {
             System.out.print(nota + " ");
         }
         System.out.println();
+
+        double mitjanaJoan = CalculadoraEstadistiques.calcularMitjana(notesJoan);
+        double maximJoan = CalculadoraEstadistiques.calcularMaxim(notesJoan);
+        double minimJoan = CalculadoraEstadistiques.calcularMinim(notesJoan);
+
+        System.out.println("Mitjana de les notes de Joan: " + mitjanaJoan);
+        System.out.println("Nota màxima de Joan: " + maximJoan);
+        System.out.println("Nota mínima de Joan: " + minimJoan);
     }
 
 }
