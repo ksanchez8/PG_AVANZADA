@@ -1,6 +1,6 @@
 package figures;
 
-public class Figura2D {
+public abstract class Figura2D implements FiguraGeometrica {
     protected String nom;
 
     public Figura2D(String nom) {
