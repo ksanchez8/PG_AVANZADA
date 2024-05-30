@@ -1,6 +1,6 @@
 package figures;
 
-public class Rectangle {
+
     public class Rectangle extends Figura2D {
         private double amplada;
         private double altura;
@@ -10,7 +10,7 @@ public class Rectangle {
             this.amplada = amplada;
             this.altura = altura;
         }
-        
+
         public double calcularArea() {
             return amplada * altura;
         }
@@ -19,4 +19,4 @@ public class Rectangle {
             return 2 * (amplada + altura);
         }
     }
-}
+
