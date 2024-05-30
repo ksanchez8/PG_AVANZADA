@@ -41,4 +41,14 @@ public class GestioBiblioteca {
     public static void inserirLlibre(Connection conn, String titol, int anyPublicacio, int autorId) {
         String sql = "INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES (?, ?, ?)";
 
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, titol);
+            pstmt.setInt(2, anyPublicacio);
+            pstmt.setInt(3, autorId);
+            pstmt.executeUpdate();
+            System.out.println("Llibre inserit correctament.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
