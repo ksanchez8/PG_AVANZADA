@@ -20,6 +20,11 @@ class Aliment extends Producte {
         return preu;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", Data de Caducitat: " + dataCaducitat + ", Preu Final: " + calcularPreuFinal();
+    }
+
 
 
 
