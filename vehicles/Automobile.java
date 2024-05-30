@@ -24,4 +24,7 @@ public class Automobile {
         return speed;
     }
 
+    public String getModel() {
+        return model;
+    }
 }
