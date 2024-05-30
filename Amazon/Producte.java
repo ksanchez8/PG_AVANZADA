@@ -12,6 +12,8 @@ abstract class Producte {
         this.preu = preu;
     }
 
+    public abstract double calcularPreuFinal();
+
 
 
 
