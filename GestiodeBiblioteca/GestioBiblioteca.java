@@ -37,4 +37,8 @@ public class GestioBiblioteca {
             e.printStackTrace();
         }
     }
+
+    public static void inserirLlibre(Connection conn, String titol, int anyPublicacio, int autorId) {
+        String sql = "INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES (?, ?, ?)";
+
 }
