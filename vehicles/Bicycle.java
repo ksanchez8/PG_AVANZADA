@@ -19,4 +19,8 @@ public class Bicycle {
             speed = 0;
         }
     }
+
+    public int getCurrentSpeed() {
+        return speed;
+    }
 }
