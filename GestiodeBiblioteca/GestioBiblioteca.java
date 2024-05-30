@@ -55,4 +55,8 @@ public class GestioBiblioteca {
 
     public static void obtenirLlibresAutor(Connection conn, int autorId) {
         String sql = "SELECT * FROM Llibre WHERE autorId = ?";
+
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, autorId);
+            ResultSet rs = pstmt.executeQuery();
 }
