@@ -9,4 +9,6 @@ public class GestioBiblioteca {
 
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)) {
             System.out.println("Connexió a la base de dades establerta.");
-}
+
+            inserirAutor(conn, "Isaac", "Asimov");
+
