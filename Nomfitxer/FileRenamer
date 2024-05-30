@@ -7,3 +7,5 @@ public class FileRenamer {
 
         System.out.println("Introdueix la ruta del fitxer:");
         String filePath = scanner.nextLine();
+
+        File file = new File(filePath);
