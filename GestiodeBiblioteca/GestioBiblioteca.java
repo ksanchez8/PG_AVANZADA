@@ -2,6 +2,7 @@ package GestiodeBiblioteca;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class GestioBiblioteca {
@@ -26,4 +27,14 @@ public class GestioBiblioteca {
 
     public static void inserirAutor(Connection conn, String nom, String cognom) {
         String sql = "INSERT INTO Autor (nom, cognom) VALUES (?, ?)";
+
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, nom);
+            pstmt.setString(2, cognom);
+            pstmt.executeUpdate();
+            System.out.println("Autor inserit correctament.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
