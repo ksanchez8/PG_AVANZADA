@@ -12,4 +12,11 @@ public class Automobile {
     public void accelerate() {
         speed += 10; 
     }
+
+    public void brake() {
+        speed -= 10; 
+        if (speed < 0) {
+            speed = 0; 
+        }
+    }
 }
