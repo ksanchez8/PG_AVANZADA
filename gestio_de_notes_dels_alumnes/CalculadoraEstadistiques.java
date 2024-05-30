@@ -18,4 +18,17 @@ public class CalculadoraEstadistiques {
         }
         return maxim;
     }
+
+    public static double calcularMinim(double[] notes) {
+        double minim = notes[0];
+        for (double nota : notes) {
+            if (nota < minim) {
+                minim = nota;
+            }
+        }
+        return minim;
+    }
 }
+
+
+
