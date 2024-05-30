@@ -8,4 +8,8 @@ public class Automobile {
         this.model = model;
         this.speed = 0;
     }
+
+    public void accelerate() {
+        speed += 10; 
+    }
 }
