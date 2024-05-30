@@ -10,5 +10,17 @@ class Aliment extends Producte {
         this.dataCaducitat = dataCaducitat;
     }
 
+    @Override
+    public double calcularPreuFinal() {
+        LocalDate avui = LocalDate.now();
+        long diesRestants = java.time.temporal.ChronoUnit.DAYS.between(avui, dataCaducitat);
+        if (diesRestants < 10) {
+            return preu * 0.5; 
+        }
+        return preu;
+    }
+
+
+
 
 }
