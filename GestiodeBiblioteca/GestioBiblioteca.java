@@ -50,5 +50,9 @@ public class GestioBiblioteca {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
     }
+
+    public static void obtenirLlibresAutor(Connection conn, int autorId) {
+        String sql = "SELECT * FROM Llibre WHERE autorId = ?";
 }
