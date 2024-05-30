@@ -18,5 +18,9 @@ class Llibre extends Producte {
         return preu;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", Autor: " + autor + ", Nombre de Pàgines: " + numPagines + ", Preu Final: " + calcularPreuFinal();
+    }
 
 }
