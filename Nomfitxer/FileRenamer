@@ -14,3 +14,9 @@ public class FileRenamer {
             System.out.println("El fitxer especificat no existeix.");
             return;
         }
+
+        String fileName = file.getName();
+        int lastDotIndex = fileName.lastIndexOf('.');
+        String newFileName = (lastDotIndex == -1) ? fileName : fileName.substring(0, lastDotIndex);
+
+    
