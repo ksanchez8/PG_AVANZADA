@@ -20,3 +20,5 @@ public class FileRenamer {
         String newFileName = (lastDotIndex == -1) ? fileName : fileName.substring(0, lastDotIndex);
 
         String fileDir = file.getParent();
+
+        File newFile = new File(fileDir, newFileName);
