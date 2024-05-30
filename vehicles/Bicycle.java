@@ -8,4 +8,8 @@ public class Bicycle {
         this.type = type;
         this.speed = 0;
     }
+
+    public void accelerate() {
+        speed += 5; // Incrementa la velocidad en 5
+    }
 }
