@@ -21,3 +21,9 @@ public class GestionEmpleados {
                     empleats.add(linia);
                 }
             }
+        } catch (IOException e) {
+            System.out.println("Error buscant empleat: " + e.getMessage());
+        }
+        return empleats;
+    }
+
