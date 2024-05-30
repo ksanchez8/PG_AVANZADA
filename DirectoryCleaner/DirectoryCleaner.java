@@ -29,4 +29,8 @@ public class DirectoryCleaner {
         if (files != null) {
             for (File file : files) {
                 if (file.isDirectory()) {
+                    if (!deleteDirectoryContents(file)) {
+                        return false;
+                    }
+                }
 
