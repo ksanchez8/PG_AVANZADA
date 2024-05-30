@@ -27,7 +27,7 @@ public class Main {
                     int edat = scanner.nextInt();
                     gestio.afegirEmpleat(nom, cognom, edat);
                     break;
-                    
+
                 case 2:
                     System.out.println("Introdueix el nom:");
                     String buscarNom = scanner.nextLine();
@@ -40,5 +40,26 @@ public class Main {
                         }
                     }
                     break;
+                
+                case 3:
+                    List<String> totsEmpleats = gestio.llistarEmpleats();
+                    if (totsEmpleats.isEmpty()) {
+                        System.out.println("No hi ha empleats emmagatzemats.");
+                    } else {
+                        for (String empleat : totsEmpleats) {
+                            System.out.println(empleat);
+                        }
+                    }
+                    break;
+                case 4:
+                    scanner.close();
+                    System.out.println("Sortint del programa.");
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Opció no vàlida.");
+            }
+        }
+    }
     
 }
