@@ -38,4 +38,9 @@ public class DirectoryCleaner {
                     System.out.println("No s'ha pogut eliminar: " + file.getPath());
                     return false;
                 }
+            }
+        }
+        return true;
+    }
+}
 
