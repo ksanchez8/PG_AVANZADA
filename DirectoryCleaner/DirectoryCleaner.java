@@ -14,3 +14,10 @@ public class DirectoryCleaner {
             System.out.println("La ruta especificada no és una carpeta vàlida.");
             return;
         }
+
+        if (deleteDirectoryContents(directory)) {
+            System.out.println("El contingut de la carpeta s'ha eliminat correctament.");
+        } else {
+            System.out.println("No s'ha pogut eliminar el contingut de la carpeta.");
+        }
+
