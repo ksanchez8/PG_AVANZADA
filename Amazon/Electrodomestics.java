@@ -16,5 +16,10 @@ class Electrodomestic extends Producte {
         return preu;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", Mesos de Garantia: " + mesosGarantia + ", Preu Final: " + calcularPreuFinal();
+    }
+
 
 }
