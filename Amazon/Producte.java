@@ -14,6 +14,11 @@ abstract class Producte {
 
     public abstract double calcularPreuFinal();
 
+    @Override
+    public String toString() {
+        return "Codi: " + codi + ", Nom: " + nom + ", Preu: " + preu;
+    }
+
 
 
 
