@@ -34,3 +34,8 @@ public class DirectoryCleaner {
                     }
                 }
 
+                if (!file.delete()) {
+                    System.out.println("No s'ha pogut eliminar: " + file.getPath());
+                    return false;
+                }
+
