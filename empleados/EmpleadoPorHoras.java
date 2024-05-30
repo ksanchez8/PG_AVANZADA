@@ -10,7 +10,6 @@ public class EmpleadoPorHoras extends Empleado  {
         this.tarifaPorHora = tarifaPorHora;
     }
 
-    @Override
     public void imprimirDetalles() {
         super.imprimirDetalles();
         System.out.println("Horas trabajadas: " + horasTrabajadas);

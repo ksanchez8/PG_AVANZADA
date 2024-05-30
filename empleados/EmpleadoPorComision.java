@@ -10,7 +10,6 @@ public class EmpleadoPorComision extends Empleado {
         this.comisionPorVenta = comisionPorVenta;
     }
 
-    @Override
     public void imprimirDetalles() {
         super.imprimirDetalles();
         System.out.println("Ventas realizadas: " + ventasRealizadas);

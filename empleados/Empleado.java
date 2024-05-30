@@ -1,8 +1,8 @@
 package empleados;
 
-public class Empleado {
-    private String nombre;
-    private double salario;
+public abstract class Empleado {
+    protected String nombre;
+    protected double salario;
 
     public Empleado(String nombre, double salario) {
         this.nombre = nombre;
