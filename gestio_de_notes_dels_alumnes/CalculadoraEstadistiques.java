@@ -8,4 +8,14 @@ public class CalculadoraEstadistiques {
         }
         return suma / notes.length;
     }
+
+    public static double calcularMaxim(double[] notes) {
+        double maxim = notes[0];
+        for (double nota : notes) {
+            if (nota > maxim) {
+                maxim = nota;
+            }
+        }
+        return maxim;
+    }
 }
