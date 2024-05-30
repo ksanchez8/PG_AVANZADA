@@ -11,4 +11,10 @@ public class Principal {
         Electrodomestic electrodomestic = new Electrodomestic(2, "Nevera", 500.0, 36);
         Llibre llibre = new Llibre(3, "El Senyor dels Anells", 30.0, "J.R.R. Tolkien", 1200);
 
+        botiga.afegirProducte(aliment);
+        botiga.afegirProducte(electrodomestic);
+        botiga.afegirProducte(llibre);
+
+        double preuTotal = botiga.calcularPreuTotal();
+        System.out.println("Preu Total de la Botiga: " + preuTotal);
 
