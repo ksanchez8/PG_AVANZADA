@@ -22,3 +22,9 @@ public class FileRenamer {
         String fileDir = file.getParent();
 
         File newFile = new File(fileDir, newFileName);
+
+        if (file.renameTo(newFile)) {
+            System.out.println("El fitxer s'ha reanomenat correctament a: " + newFile.getPath());
+        } else {
+            System.out.println("No s'ha pogut reanomenar el fitxer.");
+        }
