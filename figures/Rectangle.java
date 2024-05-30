@@ -11,10 +11,12 @@ public class Rectangle extends Figura2D {
         this.altura = altura;
     }
 
+    @Override
     public double calcularArea() {
         return amplada * altura;
     }
     
+    @Override
     public double calcularPerimetre() {
         return 2 * (amplada + altura);
     }
