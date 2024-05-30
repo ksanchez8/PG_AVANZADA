@@ -12,4 +12,11 @@ public class Bicycle {
     public void accelerate() {
         speed += 5; // Incrementa la velocidad en 5
     }
+
+    public void brake() {
+        speed -= 5; // Decrementa la velocidad en 5
+        if (speed < 0) {
+            speed = 0;
+        }
+    }
 }
