@@ -57,4 +57,22 @@ public class Robot {
         }
     }
 
+    public void turnRight() {
+        switch (direction) {
+            case "NORTH":
+                direction = "EAST";
+                break;
+            case "EAST":
+                direction = "SOUTH";
+                break;
+            case "SOUTH":
+                direction = "WEST";
+                break;
+            case "WEST":
+                direction = "NORTH";
+                break;
+        }
+    }
+}
+
 
