@@ -16,3 +16,7 @@ public class RobotController {
     public void turnRobotLeft() {
         robot.turnLeft();
     }
+
+    public void turnRobotRight() {
+        robot.turnRight();
+    }
