@@ -20,3 +20,7 @@ public class RobotController {
     public void turnRobotRight() {
         robot.turnRight();
     }
+
+    public String getRobotStatus() {
+        return "Posició: (" + robot.getX() + ", " + robot.getY() + ") Direcció: " + robot.getDirection();
+    }
