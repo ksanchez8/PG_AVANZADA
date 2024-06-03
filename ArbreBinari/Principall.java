@@ -45,11 +45,11 @@ class TreeNode {
     }
 }
 
-class ArbreBinari {
+class principal {
     TreeNode arrel;
     int profunditat;
 
-    public ArbreBinari(int profunditat) {
+    public principal(int profunditat) {
         this.profunditat = profunditat;
         this.arrel = null;
     }
@@ -100,13 +100,13 @@ class ArbreBinari {
 
 }
 
-public class Principal {
+public class Principall {
     public static void main(String[] args) {
-        ArbreBinari arbreEnters1 = new ArbreBinari(5);
-        ArbreBinari arbreEnters2 = new ArbreBinari(5);
+        principal arbreEnters1 = new principal(5);
+        principal arbreEnters2 = new principal(5);
 
-        ArbreBinari arbreCaracters1 = new ArbreBinari(3);
-        ArbreBinari arbreCaracters2 = new ArbreBinari(3);
+        principal arbreCaracters1 = new principal(3);
+        principal arbreCaracters2 = new principal(3);
 
         System.gc();
 
