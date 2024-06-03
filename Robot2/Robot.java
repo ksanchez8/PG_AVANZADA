@@ -23,4 +23,21 @@ public class Robot {
         return direction;
     }
 
+    public void moveForward() {
+        switch (direction) {
+            case "NORTH":
+                y -= 1;
+                break;
+            case "SOUTH":
+                y += 1;
+                break;
+            case "EAST":
+                x += 1;
+                break;
+            case "WEST":
+                x -= 1;
+                break;
+        }
+    }
+
 
